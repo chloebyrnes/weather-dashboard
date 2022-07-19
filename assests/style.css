@@ -1,59 +1,41 @@
+/* Global */
+
 * {
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-inline: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/*Header Section*/
+/* Body */
 
-#weatherdashboardtext {
-    color: white;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
+body {
+    font-family: sans-serif;
 }
 
-.headersection {
-    display: flex;
-    justify-content: center;
-}
-
-.headerbox {
-    width: 2000px;
-    height: 120px;
-    background: linear-gradient(rgb(0, 153, 255), rgb(177, 224, 255));
-}
-
-/*Search Section*/
-
-#searchbtn {
-    background-color: rgb(152, 213, 253);
-    color: white;
-    border-style: none;
-    border-radius: 10ch;
-    width:fit-content;
-    height:50px;
+.input {
     text-align: center;
+    margin: 100px;
+}
+
+input[type="text"] {
+    height: 50px;
+    width: 600px;
+    background: #e7e7e7;
+    font-family: sans-serif;
+    font-weight: bold;
     font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 10px;
 }
 
-.searchsection {
-    display: grid;
-    justify-content: start;
-  }
-
-
-/*Data Output*/
-
-.dataoutput {
-    display: grid;
-    justify-content: center;
-}
-
-/*5 Day Forecast*/
-
-.forecast {
-    display: grid;
-    justify-content: center;
+input[type="submit"] {
+    height: 50px;
+    width: 100px;
+    background: #e7e7e7;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
 }
