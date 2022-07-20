@@ -6,6 +6,20 @@
     box-sizing: border-box;
 }
 
+/* Header */
+
+.headersection {
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(119, 189, 255), rgb(24, 141, 250));
+}
+
+.headertext {
+    color:white;
+}
+
 /* Body */
 
 body {
