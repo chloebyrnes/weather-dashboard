@@ -31,7 +31,7 @@ body {
     margin: 100px;
 }
 
-input[type="text"] {
+.inputValue {
     height: 50px;
     width: 600px;
     background: #e7e7e7;
@@ -43,7 +43,7 @@ input[type="text"] {
     padding: 10px 10px;
 }
 
-input[type="submit"] {
+#button {
     height: 50px;
     width: 100px;
     background: #e7e7e7;
