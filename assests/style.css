@@ -57,3 +57,21 @@ body {
 .display {
     text-align: center;
 }
+
+
+
+
+#currentConditions {
+    margin-left: 420px;
+    margin-bottom: 50px;
+}
+
+#fiveDayForecast {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 200px;
+}
+
+.hide {
+    display: none;
+}

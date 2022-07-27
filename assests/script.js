@@ -15,7 +15,9 @@ for (var i = 0; i < savedCities.length; i ++) {
     var cityNameEl = $("<li>");
     cityNameEl.addClass("btn list-group-item");
     cityNameEl.text(city);
-    $("#city-list").append(cityNameEl);//Create City List
+    var cityLists = $("#city-list")
+    cityLists.append(cityNameEl);//Create City List
+    cityLists.removeClass("hide");
 }
 searchbutton.click(function(){
     console.log ("buttonwasclicked")
@@ -26,6 +28,15 @@ searchbutton.click(function(){
     getUserLocation(searchinput);
 });
 
+var clearHistory = $("#clear-button");
+clearHistory.click(function() {
+    console.log("Button was clicked")
+    $(".list-group-item").html("");
+})
+
+function getSavedCities(){
+    getUserLocation($(this).text())
+}
 
 
 
@@ -77,3 +88,5 @@ function getWeatherLocation (lat, lon){
         }
     })
 };
+
+$("#city-list").on("click", ".list-group-item", getSavedCities)
