@@ -26,40 +26,23 @@ body {
     font-family: sans-serif;
 }
 
-.input {
-    text-align: center;
-    margin: 100px;
+.container {
+    color:#383838;
+    /*border: solid rgb(187, 187, 187);*/
 }
 
-.inputValue {
-    height: 50px;
-    width: 600px;
-    background: #e7e7e7;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    border-radius: 2px;
-    padding: 10px 10px;
+.row {
+    border: solid rgb(119, 189, 250);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
 }
 
-#button {
-    height: 50px;
-    width: 100px;
-    background: #e7e7e7;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    border-radius: 2px;
+.column col-3 {
+    
 }
 
-.display {
-    text-align: center;
-}
-
-
-
+/*Current Conditions Five Day Forecast */
 
 #currentConditions {
     margin-left: 420px;
@@ -74,4 +57,12 @@ body {
 
 .hide {
     display: none;
+}
+
+.uvi {
+    color: green;
+}
+
+.text-primary {
+    font-weight: bold;
 }
