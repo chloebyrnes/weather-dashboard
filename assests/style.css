@@ -1,58 +1,105 @@
-/* Global */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+
+/*Body*/
+
+html {
+ font-family: sans-serif; /* 1 */
+ -ms-text-size-adjust: 100%; /* 2 */
+ -webkit-text-size-adjust: 100%; /* 2 */
 }
-
-/* Header */
-
-.headersection {
-    box-sizing: border-box;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(rgb(119, 189, 255), rgb(24, 141, 250));
-}
-
-.headertext {
-    color:white;
-}
-
-/* Body */
 
 body {
-    font-family: sans-serif;
+ margin: 0;
+ background: linear-gradient(rgb(232, 249, 255), lightskyblue);
 }
 
-.container {
-    color:#383838;
-    /*border: solid rgb(187, 187, 187);*/
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 300; }
+  h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+
+
+
+/*Blocks*/
+footer,
+header,
+section {
+ display: block;
+ position: relative;
+ width: 100%;
+ max-width: 960px;
+ margin: 0 auto;
+ padding: 0 20px;
+ box-sizing: border-box;
 }
 
-.row {
-    border: solid rgb(119, 189, 250);
+.fiveday {
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+.current {
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+/*Button*/
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+
+button {
+  margin-bottom: 1rem; }
+input {
+  margin-bottom: 1.5rem; }
+
+button {
+    border: none;
+    max-width: 20%;;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px lightskyblue;
+}
+
+input {
+    border: none;
+    max-width: 20%;;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px lightskyblue;
+}
+
+
+/*Footer*/
+
+footer {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 10%;
+    justify-content: center;
+    color: white;
 }
 
-.column col-3 {
-    
-}
 
-/*Current Conditions Five Day Forecast */
+  /*Additional*/
 
-#currentConditions {
-    margin-left: 420px;
+  #currentConditions {
+    margin-left: 10px;
     margin-bottom: 50px;
 }
 
 #fiveDayForecast {
     display: flex;
     justify-content: space-evenly;
-    margin-left: 200px;
+    margin-left: 0px;
 }
 
 .hide {
@@ -63,6 +110,20 @@ body {
     color: green;
 }
 
-.text-primary {
-    font-weight: bold;
+
+/*List*/
+
+ul {
+    list-style: none; }
+
+
+
+#city-list {
+    display:block;
+    border: 1px solid white;
+    padding:5px;
+    margin-top:5px;
+    width:924px;
+    height:50px;
+    overflow:auto;
 }

@@ -52,7 +52,7 @@ function getUserLocation (searchInput){
               cityName = data[0].name;
               var latString = locationLat.toString();
               var lonString = locationLon.toString();
-              // Call function to get valuesS
+              // Call function to get values
               getWeatherLocation(latString, lonString);
             });
         } else {
